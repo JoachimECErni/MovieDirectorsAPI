@@ -1,0 +1,240 @@
+[
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.ActorController",
+    "Method": "GetAllActors",
+    "RelativePath": "api/Actor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.ActorController",
+    "Method": "CreateActor",
+    "RelativePath": "api/Actor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createActor",
+        "Type": "MovieDirectorsAPI.Data.Contracts.CreateActor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.ActorController",
+    "Method": "UpdateActor",
+    "RelativePath": "api/Actor",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateActor",
+        "Type": "MovieDirectorsAPI.Data.Contracts.UpdateActor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.ActorController",
+    "Method": "DeleteActor",
+    "RelativePath": "api/Actor",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.ActorController",
+    "Method": "GetActor",
+    "RelativePath": "api/Actor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.ActorMovieController",
+    "Method": "CreateActorMovie",
+    "RelativePath": "api/ActorMovie",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createActorMovie",
+        "Type": "MovieDirectorsAPI.Data.Contracts.CreateActorMovie",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.ActorMovieController",
+    "Method": "UpdateActorMovie",
+    "RelativePath": "api/ActorMovie",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateActorMovie",
+        "Type": "MovieDirectorsAPI.Data.Contracts.UpdateActorMovie",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.ActorMovieController",
+    "Method": "DeleteActor",
+    "RelativePath": "api/ActorMovie",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.DirectorController",
+    "Method": "GetAllDirectors",
+    "RelativePath": "api/Director",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.DirectorController",
+    "Method": "CreateDirector",
+    "RelativePath": "api/Director",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDirector",
+        "Type": "MovieDirectorsAPI.Data.Contracts.CreateDirector",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.DirectorController",
+    "Method": "GetDirector",
+    "RelativePath": "api/Director/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.MovieController",
+    "Method": "GetAllMovies",
+    "RelativePath": "api/Movie",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.MovieController",
+    "Method": "CreateMovie",
+    "RelativePath": "api/Movie",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createMovie",
+        "Type": "MovieDirectorsAPI.Data.Contracts.CreateMovie",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.MovieController",
+    "Method": "UpdateMovie",
+    "RelativePath": "api/Movie",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateMovie",
+        "Type": "MovieDirectorsAPI.Data.Contracts.UpdateMovie",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.MovieController",
+    "Method": "DeleteMovie",
+    "RelativePath": "api/Movie",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieDirectorsAPI.Controllers.MovieController",
+    "Method": "GetMovie",
+    "RelativePath": "api/Movie/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
