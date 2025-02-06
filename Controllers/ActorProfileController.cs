@@ -12,27 +12,24 @@ namespace MovieDirectorsAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ActorController : ControllerBase
+    public class ActorProfileController : ControllerBase
     {
-        private readonly IBaseRepository<Actor> _context;
+        private readonly IBaseRepository<ActorProfile> _context;
         private readonly IMapper _mapper;
 
-        public ActorController(IBaseRepository<Actor> context = null, IMapper mapper = null)
+        public ActorProfileController(IBaseRepository<ActorProfile> context = null, IMapper mapper = null)
         {
             _context = context;
             _mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllActors()
+        public async Task<IActionResult> GetAllActorProfiles()
         {
             try
             {
-                var actors = await _context.GetAll(
-                    query => query
-                    .Include(a => a.Movies)
-                    .ThenInclude(am => am.Movie));
-                var actorDtos = _mapper.Map<List<ActorDTO>>(actors);
+                var actors = await _context.GetAll();
+                var actorDtos = _mapper.Map<List<ActorProfileDTO>>(actors);
                 return Ok(actorDtos);
             }
             catch (Exception ex)
@@ -43,15 +40,12 @@ namespace MovieDirectorsAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetActor(int id)
+        public async Task<IActionResult> GetActorProfile(int id)
         {
             try
             {
-                var actor = await _context.Get(id,
-                    query => query
-                    .Include(a => a.Movies)
-                    .ThenInclude(am => am.Movie));
-                var actorDTO = _mapper.Map<ActorDTO>(actor);
+                var actorProfile = await _context.Get(id);
+                var actorDTO = _mapper.Map<ActorProfileDTO>(actorProfile);
                 return Ok(actorDTO);
             }
             catch (Exception ex)
@@ -62,14 +56,14 @@ namespace MovieDirectorsAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateActor([FromBody] CreateActor createActor)
+        public async Task<IActionResult> CreateActorProfile([FromBody] CreateActorProfile createActorProfile)
         {
             try
             {
-                var actor = _mapper.Map<Actor>(createActor);
-                var createdActor = await _context.Add(actor);
-                var actorDTO = _mapper.Map<ActorDTO>(createdActor);
-                return CreatedAtAction(nameof(CreateActor),new {id = actorDTO.Id},actorDTO);
+                var actorProfile = _mapper.Map<ActorProfile>(createActorProfile);
+                var createdActorProfile = await _context.Add(actorProfile);
+                var actorProfileDTO = _mapper.Map<ActorProfileDTO>(createdActorProfile);
+                return CreatedAtAction(nameof(CreateActor),new {id = actorProfileDTO.Id}, actorProfileDTO);
             }
             catch (Exception ex)
             {
@@ -79,17 +73,17 @@ namespace MovieDirectorsAPI.Controllers
         }
 
         [HttpPatch]
-        public async Task<IActionResult> UpdateActor([FromBody] UpdateActor updateActor)
+        public async Task<IActionResult> UpdateActorProfile([FromBody] UpdateActorProfile updateActorProfile)
         {
             try
             {
-                var actor = await _context.Get(updateActor.Id);
-                if (actor == null)
-                    NotFound("Actor not found");
-                _mapper.Map(updateActor, actor);
-                var updatedActor = await _context.Update(actor);
-                var actorDTO = _mapper.Map<ActorDTO>(updatedActor);
-                return Ok(actorDTO);
+                var actorProfile = await _context.Get(updateActorProfile.Id);
+                if (actorProfile == null)
+                    NotFound("Actor Profile not found");
+                _mapper.Map(updateActorProfile, actorProfile);
+                var updatedActor = await _context.Update(actorProfile);
+                var actorProfileDTO = _mapper.Map<ActorProfileDTO>(updatedActor);
+                return Ok(actorProfileDTO);
             }
             catch (Exception ex)
             {
@@ -99,15 +93,15 @@ namespace MovieDirectorsAPI.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteActor(int id)
+        public async Task<IActionResult> DeleteActorProfile(int id)
         {
             try
             {
-                var actor = await _context.Get(id);
-                if (actor == null)
-                    NotFound($"Actor not found with id {id}");
+                var actorProfile = await _context.Get(id);
+                if (actorProfile == null)
+                    NotFound($"Actor Profile not found with id {id}");
                 await _context.Delete(id);
-                return Ok(actor);
+                return Ok(actorProfile);
             }
             catch (Exception ex)
             {

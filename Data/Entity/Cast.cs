@@ -1,6 +1,6 @@
 ﻿namespace MovieDirectorsAPI.Data.Entity
 {
-    public class ActorMovie
+    public class Cast
     {
         public int Id { get; set; }
         public required int ActorId { get; set; }

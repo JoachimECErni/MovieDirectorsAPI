@@ -35,10 +35,7 @@ namespace MovieDirectorsAPI
             });
 
             builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
-            builder.Services.AddScoped(typeof(IActorMovieRepository<>), typeof(ActorMovieRepository<>));
-            builder.Services.AddScoped(typeof(IActorRepository<>), typeof(ActorRepository<>));
-            builder.Services.AddScoped(typeof(IMovieRepository<>), typeof(MovieRepository<>));
-            builder.Services.AddScoped(typeof(IDirectorRepository<>), typeof(DirectorRepository<>));
+            builder.Services.AddScoped(typeof(ICastRepository<>), typeof(CastRepository<>));
             builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
             var app = builder.Build();

@@ -20,18 +20,35 @@ namespace MovieDirectorsAPI.Data.Repositories
             return entity;
         }
 
-        public Task<List<T>> GetAll(params Expression<Func<T, object>>[] includes)
+        /*public Task<List<T>> GetAll(params Expression<Func<T, object>>[] includes)
         {
             IQueryable<T> query = _context.Set<T>();
             query = includes.Aggregate(query, (current, include) => current.Include(include));
             return query.ToListAsync();
+        }*/
+
+        public Task<List<T>> GetAll(Func<IQueryable<T>, IQueryable<T>> include = null)
+        {
+            IQueryable<T> query = _context.Set<T>();
+            if (include != null)
+                query = include(query);
+            return query.ToListAsync();
         }
-        public async Task<T> Get(int Id, params Expression<Func<T, object>>[] includes)
+
+        public async Task<T> Get(int Id,Func<IQueryable<T>, IQueryable<T>> include = null)
+        {
+            IQueryable<T> query = _context.Set<T>();
+            if (include != null)
+                query = include(query);
+            return await query.FirstOrDefaultAsync(e => EF.Property<int>(e, "Id") == Id);
+        }
+
+        /*public async Task<T> Get(int Id, params Expression<Func<T, object>>[] includes)
         {
             IQueryable<T> query = _context.Set<T>();
             query = includes.Aggregate(query, (current, include) => current.Include(include));
             return await query.FirstOrDefaultAsync(e => EF.Property<int>(e, "Id") == Id);
-        }
+        }*/
 
         public async Task<T> Update(T entity)
         {

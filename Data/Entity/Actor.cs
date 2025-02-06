@@ -14,6 +14,7 @@ namespace MovieDirectorsAPI.Data.Entity
         [JsonConverter(typeof(CountryConverter))]
         public required Country CountryofBirth { get; set; }
 
-        public virtual ICollection<ActorMovie> ActorMovies { get; set; } = new List<ActorMovie>();
+        public virtual ICollection<Cast> Movies { get; set; } = new List<Cast>();
+        public virtual ActorProfile ActorProfile { get; set; }
     }
 }

@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|c:\\users\\extcojc\\onedrive - erni group\\desktop\\erni-epm-university\\3. database integration\\3.3 object-relational mapping (orm)\\moviedirectorsapi\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|solutionrelative:controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|c:\\users\\extcojc\\onedrive - erni group\\desktop\\erni-epm-university\\3. database integration\\3.3 object-relational mapping (orm)\\moviedirectorsapi\\controllers\\actorprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|solutionrelative:controllers\\actorprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|c:\\users\\extcojc\\onedrive - erni group\\desktop\\erni-epm-university\\3. database integration\\3.3 object-relational mapping (orm)\\moviedirectorsapi\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|solutionrelative:mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|c:\\users\\extcojc\\onedrive - erni group\\desktop\\erni-epm-university\\3. database integration\\3.3 object-relational mapping (orm)\\moviedirectorsapi\\data\\contracts\\actorprofilecontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|solutionrelative:data\\contracts\\actorprofilecontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|c:\\users\\extcojc\\onedrive - erni group\\desktop\\erni-epm-university\\3. database integration\\3.3 object-relational mapping (orm)\\moviedirectorsapi\\controllers\\actorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|solutionrelative:controllers\\actorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|c:\\users\\extcojc\\onedrive - erni group\\desktop\\erni-epm-university\\3. database integration\\3.3 object-relational mapping (orm)\\moviedirectorsapi\\data\\entity\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|solutionrelative:data\\entity\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|c:\\users\\extcojc\\onedrive - erni group\\desktop\\erni-epm-university\\3. database integration\\3.3 object-relational mapping (orm)\\moviedirectorsapi\\controllers\\directorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|solutionrelative:controllers\\directorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|c:\\users\\extcojc\\onedrive - erni group\\desktop\\erni-epm-university\\3. database integration\\3.3 object-relational mapping (orm)\\moviedirectorsapi\\controllers\\actormoviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|solutionrelative:controllers\\actormoviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|c:\\users\\extcojc\\onedrive - erni group\\desktop\\erni-epm-university\\3. database integration\\3.3 object-relational mapping (orm)\\moviedirectorsapi\\data\\contracts\\actormoviecontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AC54F4E-72F8-4D69-B75E-487ABF3CF6F7}|MovieDirectorsAPI.csproj|solutionrelative:data\\contracts\\actormoviecontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActorProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Controllers\\ActorProfileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ActorProfileController.cs",
+              "ToolTip": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Controllers\\ActorProfileController.cs",
+              "RelativeToolTip": "Controllers\\ActorProfileController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAA7wGkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T06:39:00.942Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -48,87 +49,35 @@
               "RelativeDocumentMoniker": "Mapping\\MappingProfile.cs",
               "ToolTip": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Mapping\\MappingProfile.cs",
               "RelativeToolTip": "Mapping\\MappingProfile.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwCEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T07:56:11.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Movie.cs",
-              "DocumentMoniker": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Data\\Entity\\Movie.cs",
-              "RelativeDocumentMoniker": "Data\\Entity\\Movie.cs",
-              "ToolTip": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Data\\Entity\\Movie.cs",
-              "RelativeToolTip": "Data\\Entity\\Movie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T07:51:33.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MovieController.cs",
-              "DocumentMoniker": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Controllers\\MovieController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MovieController.cs",
-              "ToolTip": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Controllers\\MovieController.cs",
-              "RelativeToolTip": "Controllers\\MovieController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAswE0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T07:13:30.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DirectorController.cs",
-              "DocumentMoniker": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Controllers\\DirectorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DirectorController.cs",
-              "ToolTip": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Controllers\\DirectorController.cs",
-              "RelativeToolTip": "Controllers\\DirectorController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAgwDcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T07:13:21.284Z",
+              "WhenOpened": "2025-02-06T06:38:11.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ActorProfileContract.cs",
+              "DocumentMoniker": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Data\\Contracts\\ActorProfileContract.cs",
+              "RelativeDocumentMoniker": "Data\\Contracts\\ActorProfileContract.cs",
+              "ToolTip": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Data\\Contracts\\ActorProfileContract.cs",
+              "RelativeToolTip": "Data\\Contracts\\ActorProfileContract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T05:15:48.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ActorController.cs",
               "DocumentMoniker": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Controllers\\ActorController.cs",
               "RelativeDocumentMoniker": "Controllers\\ActorController.cs",
               "ToolTip": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Controllers\\ActorController.cs",
               "RelativeToolTip": "Controllers\\ActorController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAkwFMAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAASwCUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T07:12:23.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ActorMovieContract.cs",
-              "DocumentMoniker": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Data\\Contracts\\ActorMovieContract.cs",
-              "RelativeDocumentMoniker": "Data\\Contracts\\ActorMovieContract.cs",
-              "ToolTip": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Data\\Contracts\\ActorMovieContract.cs",
-              "RelativeToolTip": "Data\\Contracts\\ActorMovieContract.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T06:54:55.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ActorMovieController.cs",
-              "DocumentMoniker": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Controllers\\ActorMovieController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ActorMovieController.cs",
-              "ToolTip": "C:\\Users\\extcojc\\OneDrive - ERNI Group\\Desktop\\ERNI-EPM-University\\3. Database Integration\\3.3 Object-Relational Mapping (ORM)\\MovieDirectorsAPI\\Controllers\\ActorMovieController.cs",
-              "RelativeToolTip": "Controllers\\ActorMovieController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAswDIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T06:54:38.388Z",
+              "WhenOpened": "2025-02-06T05:12:45.304Z",
               "EditorCaption": ""
             }
           ]

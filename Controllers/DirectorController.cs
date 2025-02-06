@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MovieDirectorsAPI.Data.Contracts;
 using MovieDirectorsAPI.Data.Entity;
 using MovieDirectorsAPI.Data.Repositories.Interfaces;
@@ -12,10 +13,10 @@ namespace MovieDirectorsAPI.Controllers
     [ApiController]
     public class DirectorController : ControllerBase
     {
-        private readonly IDirectorRepository<Director> _context;
+        private readonly IBaseRepository<Director> _context;
         private readonly IMapper _mapper;
 
-        public DirectorController(IDirectorRepository<Director> context = null, IMapper mapper = null)
+        public DirectorController(IBaseRepository<Director> context = null, IMapper mapper = null)
         {
             _context = context;
             _mapper = mapper;
@@ -26,7 +27,9 @@ namespace MovieDirectorsAPI.Controllers
         {
             try
             {
-                var directors = await _context.GetAll();
+                var directors = await _context.GetAll(
+                    query => query
+                    .Include(d => d.Movies));
                 var directorsDTO = _mapper.Map<List<DirectorDTO>>(directors);
                 return Ok(directorsDTO);
             }
@@ -42,7 +45,9 @@ namespace MovieDirectorsAPI.Controllers
         {
             try
             {
-                var director = await _context.Get(id);
+                var director = await _context.Get(id,
+                    query => query
+                    .Include(d => d.Movies));
                 var directorDTO = _mapper.Map<DirectorDTO>(director);
                 return Ok(directorDTO);
             }

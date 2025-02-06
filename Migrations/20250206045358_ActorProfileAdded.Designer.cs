@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MovieDirectorsAPI.Data.Context;
 
@@ -11,9 +12,11 @@ using MovieDirectorsAPI.Data.Context;
 namespace MovieDirectorsAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250206045358_ActorProfileAdded")]
+    partial class ActorProfileAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -77,7 +80,7 @@ namespace MovieDirectorsAPI.Migrations
                     b.HasIndex("ActorId")
                         .IsUnique();
 
-                    b.ToTable("ActorProfiles");
+                    b.ToTable("ActorProfile");
                 });
 
             modelBuilder.Entity("MovieDirectorsAPI.Data.Entity.Cast", b =>
@@ -100,7 +103,7 @@ namespace MovieDirectorsAPI.Migrations
 
                     b.HasIndex("MovieId");
 
-                    b.ToTable("Cast");
+                    b.ToTable("ActorMovies");
                 });
 
             modelBuilder.Entity("MovieDirectorsAPI.Data.Entity.Director", b =>

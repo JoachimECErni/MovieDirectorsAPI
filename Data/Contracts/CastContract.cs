@@ -4,14 +4,14 @@ using MovieDirectorsAPI.Enums;
 
 namespace MovieDirectorsAPI.Data.Contracts
 {
-    public record CreateActorMovie
+    public record CreateCast
     {
         public int ActorId { get; set; }
 
         public int MovieId { get; set; }
     }
 
-    public record UpdateActorMovie
+    public record UpdateCast
     {
         public required int Id { get; set; }
         public required int ActorId { get; set; }

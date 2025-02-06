@@ -11,6 +11,6 @@
 
         public int? DirectorId { get; set; }
         public virtual Director Director { get; set; }
-        public virtual ICollection<ActorMovie> ActorMovies{ get; set; } = new List<ActorMovie>();
+        public virtual ICollection<Cast> Cast{ get; set; } = new List<Cast>();
     }
 }

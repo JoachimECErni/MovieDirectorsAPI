@@ -25,10 +25,13 @@ namespace MovieDirectorsAPI.Mapping
             CreateMap<Actor, GetActorDTO>()
                 .ForMember(dest => dest.Name, opt => opt.MapFrom(src => $"{src.FirstName} {src.LastName}"));
 
-            CreateMap<CreateActorMovie, ActorMovie>();
-            CreateMap<UpdateActorMovie, ActorMovie>();
-            CreateMap<ActorMovie, GetActorMovieDTO>();
-            CreateMap<ActorMovie, GetMovieActorDTO>();
+            CreateMap<CreateCast, Cast>();
+            CreateMap<UpdateCast, Cast>();
+            CreateMap<Cast, GetActorMovieDTO>();
+            CreateMap<Cast, GetMovieActorDTO>();
+
+            CreateMap<CreateActorProfile, ActorProfile>();
+            CreateMap<UpdateActorProfile, ActorProfile>();
         }
     }
 }

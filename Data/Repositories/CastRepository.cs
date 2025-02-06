@@ -7,11 +7,11 @@ using System.Linq.Expressions;
 
 namespace MovieDirectorsAPI.Data.Repositories
 {
-    public class ActorMovieRepository<T> : IActorMovieRepository<T> where T : ActorMovie
+    public class CastRepository<T> : ICastRepository<T> where T : Cast
     {
         private readonly AppDbContext _context;
         private readonly DbSet<T> _dbset;
-        public ActorMovieRepository(AppDbContext context)
+        public CastRepository(AppDbContext context)
         {
             _context = context;
             _dbset = _context.Set<T>();

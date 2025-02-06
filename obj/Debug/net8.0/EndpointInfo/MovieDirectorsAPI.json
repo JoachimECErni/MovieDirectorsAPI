@@ -118,26 +118,36 @@
         }
       }
     },
-    "/api/ActorMovie": {
+    "/api/ActorProfile": {
+      "get": {
+        "tags": [
+          "ActorProfile"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "post": {
         "tags": [
-          "ActorMovie"
+          "ActorProfile"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateActorMovie"
+                "$ref": "#/components/schemas/CreateActorProfile"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateActorMovie"
+                "$ref": "#/components/schemas/CreateActorProfile"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateActorMovie"
+                "$ref": "#/components/schemas/CreateActorProfile"
               }
             }
           }
@@ -148,25 +158,25 @@
           }
         }
       },
-      "put": {
+      "patch": {
         "tags": [
-          "ActorMovie"
+          "ActorProfile"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateActorMovie"
+                "$ref": "#/components/schemas/UpdateActorProfile"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateActorMovie"
+                "$ref": "#/components/schemas/UpdateActorProfile"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateActorMovie"
+                "$ref": "#/components/schemas/UpdateActorProfile"
               }
             }
           }
@@ -179,7 +189,110 @@
       },
       "delete": {
         "tags": [
-          "ActorMovie"
+          "ActorProfile"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ActorProfile/{id}": {
+      "get": {
+        "tags": [
+          "ActorProfile"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cast": {
+      "post": {
+        "tags": [
+          "Cast"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCast"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCast"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCast"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Cast"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCast"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCast"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCast"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Cast"
         ],
         "parameters": [
           {
@@ -605,7 +718,29 @@
         },
         "additionalProperties": false
       },
-      "CreateActorMovie": {
+      "CreateActorProfile": {
+        "type": "object",
+        "properties": {
+          "actorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "biography": {
+            "type": "string",
+            "nullable": true
+          },
+          "nationality": {
+            "type": "string",
+            "nullable": true
+          },
+          "education": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateCast": {
         "type": "object",
         "properties": {
           "actorId": {
@@ -716,7 +851,37 @@
         },
         "additionalProperties": false
       },
-      "UpdateActorMovie": {
+      "UpdateActorProfile": {
+        "required": [
+          "actorId",
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "actorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "biography": {
+            "type": "string",
+            "nullable": true
+          },
+          "nationality": {
+            "type": "string",
+            "nullable": true
+          },
+          "education": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateCast": {
         "required": [
           "actorId",
           "id",

@@ -33,7 +33,7 @@ namespace MovieDirectorsAPI.Data.Contracts
         public DateOnly ReleaseDate { get; set; }
         public float BoxOfficeGross { get; set; }
         public int? DirectorId { get; set; }
-        public ICollection<GetMovieActorDTO> ActorMovies { get; set; }
+        public ICollection<GetMovieActorDTO> Cast { get; set; }
     }
 
     public class GetMovieDTO

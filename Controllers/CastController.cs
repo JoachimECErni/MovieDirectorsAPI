@@ -10,19 +10,19 @@ namespace MovieDirectorsAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ActorMovieController : ControllerBase
+    public class CastController : ControllerBase
     {
-        private readonly IActorMovieRepository<ActorMovie> _context;
+        private readonly ICastRepository<Cast> _context;
         private readonly IMapper _mapper;
 
-        public ActorMovieController(IActorMovieRepository<ActorMovie> context = null, IMapper mapper = null)
+        public CastController(ICastRepository<Cast> context = null, IMapper mapper = null)
         {
             _context = context;
             _mapper = mapper;
         }
 
         /*[HttpGet("{id}")]
-        public async Task<IActionResult> GetActorMovie(int id)
+        public async Task<IActionResult> GetCast(int id)
         {
             try
             {
@@ -37,13 +37,13 @@ namespace MovieDirectorsAPI.Controllers
         }*/
 
         [HttpPost]
-        public async Task<IActionResult> CreateActorMovie([FromBody] CreateActorMovie createActorMovie)
+        public async Task<IActionResult> CreateCast([FromBody] CreateCast createCast)
         {
             try
             {
-                var actorMovie = _mapper.Map<ActorMovie>(createActorMovie);
-                var createdActorMovie = await _context.Add(actorMovie);
-                return CreatedAtAction(nameof(CreateActorMovie), createdActorMovie);
+                var cast = _mapper.Map<Cast>(createCast);
+                var createdCast = await _context.Add(cast);
+                return CreatedAtAction(nameof(CreateCast), createdCast);
             }
             catch (Exception ex)
             {
@@ -53,14 +53,14 @@ namespace MovieDirectorsAPI.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateActorMovie([FromBody] UpdateActorMovie updateActorMovie)
+        public async Task<IActionResult> UpdateCast([FromBody] UpdateCast updateCast)
         {
             try
             {
-                var data = await _context.Get(updateActorMovie.Id);
+                var data = await _context.Get(updateCast.Id);
                 if (data == null)
-                    NotFound("Data not found");
-                _mapper.Map(updateActorMovie, data);
+                    NotFound("Cast not found");
+                _mapper.Map(updateCast, data);
                 var updatedData = await _context.Update(data);
                 return Ok(updatedData);
             }
@@ -72,13 +72,13 @@ namespace MovieDirectorsAPI.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteActor(int id)
+        public async Task<IActionResult> DeleteCast(int id)
         {
             try
             {
                 var data = await _context.Get(id);
                 if (data == null)
-                    NotFound($"Data not found with id {id}");
+                    NotFound($"Cast not found with id {id}");
                 await _context.Delete(id);
                 return Ok(data);
             }

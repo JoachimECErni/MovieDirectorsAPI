@@ -288,3 +288,4 @@ C:\Users\extcojc\OneDrive - ERNI Group\Desktop\ERNI-EPM-University\3. Database I
 C:\Users\extcojc\OneDrive - ERNI Group\Desktop\ERNI-EPM-University\3. Database Integration\3.3 Object-Relational Mapping (ORM)\MovieDirectorsAPI\obj\Debug\net8.0\MovieDirectorsAPI.pdb
 C:\Users\extcojc\OneDrive - ERNI Group\Desktop\ERNI-EPM-University\3. Database Integration\3.3 Object-Relational Mapping (ORM)\MovieDirectorsAPI\obj\Debug\net8.0\MovieDirectorsAPI.genruntimeconfig.cache
 C:\Users\extcojc\OneDrive - ERNI Group\Desktop\ERNI-EPM-University\3. Database Integration\3.3 Object-Relational Mapping (ORM)\MovieDirectorsAPI\obj\Debug\net8.0\ref\MovieDirectorsAPI.dll
+C:\Users\extcojc\OneDrive - ERNI Group\Desktop\ERNI-EPM-University\3. Database Integration\3.3 Object-Relational Mapping (ORM)\MovieDirectorsAPI\obj\Debug\net8.0\MovieDirectorsAPI.sourcelink.json

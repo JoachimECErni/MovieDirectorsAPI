@@ -29,7 +29,7 @@ namespace MovieDirectorsAPI.Data.Contracts
         public Sex Sex { get; set; }
         public Country CountryofBirth { get; set; }
 
-        public ICollection<GetActorMovieDTO> ActorMovies { get; set; }
+        public ICollection<GetActorMovieDTO> Movies { get; set; }
     }
 
     public class GetActorDTO
